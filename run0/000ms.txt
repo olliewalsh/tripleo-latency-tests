@@ -1,0 +1,17 @@
+(overcloud) [heat-admin@overcloud-novacompute-0 ~]$ time glance image-download a4a95e30-e66d-4163-a44d-6eaab39c0048 --progress --file overcloud-full.qcow2; time glance image-download a4a95e30-e66d-4163-a44d-6eaab39c0048 --progress --file overcloud-full.qcow2; time glance image-download a4a95e30-e66d-4163-a44d-6eaab39c0048 --progress --file overcloud-full.qcow2
+[=============================>] 100%
+
+real	0m8.688s
+user	0m3.655s
+sys	0m1.376s
+[=============================>] 100%
+
+real	0m8.502s
+user	0m3.473s
+sys	0m1.768s
+[=============================>] 100%
+
+real	0m6.979s
+user	0m3.489s
+sys	0m1.587s
+

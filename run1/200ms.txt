@@ -1,0 +1,27 @@
+(overcloud) [heat-admin@overcloud-novacompute-0 ~]$ ping -c 4 10.0.0.5
+PING 10.0.0.5 (10.0.0.5) 56(84) bytes of data.
+64 bytes from 10.0.0.5: icmp_seq=1 ttl=63 time=401 ms
+64 bytes from 10.0.0.5: icmp_seq=2 ttl=63 time=400 ms
+64 bytes from 10.0.0.5: icmp_seq=3 ttl=63 time=400 ms
+64 bytes from 10.0.0.5: icmp_seq=4 ttl=63 time=400 ms
+
+--- 10.0.0.5 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3003ms
+rtt min/avg/max/mdev = 400.479/400.720/401.137/0.517 ms
+(overcloud) [heat-admin@overcloud-novacompute-0 ~]$ time glance image-download a4a95e30-e66d-4163-a44d-6eaab39c0048 --progress --file overcloud-full.qcow2; time glance image-download a4a95e30-e66d-4163-a44d-6eaab39c0048 --progress --file overcloud-full.qcow2; time glance image-download a4a95e30-e66d-4163-a44d-6eaab39c0048 --progress --file overcloud-full.qcow2
+[=============================>] 100%
+
+real	0m35.763s
+user	0m3.357s
+sys	0m1.034s
+[=============================>] 100%
+
+real	0m38.458s
+user	0m3.187s
+sys	0m1.106s
+[=============================>] 100%
+
+real	0m40.390s
+user	0m3.080s
+sys	0m1.102s
+
